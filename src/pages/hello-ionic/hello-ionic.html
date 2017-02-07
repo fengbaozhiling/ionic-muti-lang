@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-title>{{ 'HELLO' | translate }}</ion-title>
+
+  <h3>{{'我是中文' | translate}}</h3>
+  <button [color]="current == 'zh-cn' ? 'primary' : 'light'" [ngClass]="{'active': current == 'zh-cn'}" (click)="changeLang('zh-cn')" ion-button color="light">中文</button>
+  <button [color]="current == 'en' ? 'primary' : 'light'" [ngClass]="{'active': current == 'en'}" (click)="changeLang('en')" ion-button color="light">英文</button>
+  <button [color]="current == 'fr' ? 'primary' : 'light'" [ngClass]="{'active': current == 'fr'}" (click)="changeLang('fr')" ion-button color="light">法文</button>
+  <button [color]="current == 'de' ? 'primary' : 'light'" [ngClass]="{'active': current == 'de'}" (click)="changeLang('de')" ion-button color="light">德文</button>
+
+  <p>
+    {{'我是中文' | translate}}
+  </p>
+  <p>
+    {{'我是中文' | translate}}
+  </p>
+  <p>
+    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+  </p>
+
+</ion-content>
