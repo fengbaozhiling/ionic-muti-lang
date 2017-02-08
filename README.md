@@ -1,20 +1,20 @@
-Ionic 2 App Base
+demo 运行需要先安装ionic，cordova
 =====================
-
-This is the base template for Ionic 2 starter apps.
-
-## Using this project
-
-You'll need the Ionic CLI with support for v2 apps:
-
 ```bash
-$ npm install -g ionic
+$ npm install -g ionic cordova
 ```
 
-Then run:
-
+然后进入目录运行:
 ```bash
-$ ionic start myApp
+$ npm install 
 ```
+安装依赖包完成后运行
+```bash
+$ ionic serve
+```
+使用 ng2-translate 来实现翻译的功能
+文档：https://github.com/ocombe/ng2-translate
 
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/docs/v2/getting-started/) page.
+语言包存储在/assets/il8n目录
+
+

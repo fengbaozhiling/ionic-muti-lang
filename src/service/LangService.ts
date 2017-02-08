@@ -11,6 +11,6 @@ export class LangService {
 
 
 
-export var LangServiceInjectables: Array<any> = [
+export let LangServiceInjectables: Array<any> = [
   LangService
 ];
