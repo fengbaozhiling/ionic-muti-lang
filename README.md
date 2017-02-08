@@ -20,7 +20,7 @@ $ ionic serve
 具体的实现逻辑：
 
 ---LangService.ts---
-<blockquote ts>
+``` typeScript
 import {Injectable} from '@angular/core';
 import {Subject, Observable} from 'rxjs';
 
@@ -37,11 +37,10 @@ export class LangService {
 export let LangServiceInjectables: Array<any> = [
   LangService
 ];
-
-</blockquote>
+```
 
 --- app.module.ts ---
-<blockquote>
+``` typeScript
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -96,10 +95,10 @@ export class AppModule {
   }
 
 }
-</blockquote>
+```
 
 ---hello-ionic.ts---
-<blockquote>
+``` typeScript
 import { Component } from '@angular/core';
 
 import {LangService} from '../../service/service';
@@ -128,4 +127,4 @@ export class HelloIonicPage {
   }
 }
 
-</blockquote>
+```
